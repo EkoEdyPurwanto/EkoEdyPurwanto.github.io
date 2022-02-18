@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* ------------------------------------------------- */
+
+/* NAVBAR */
+nav {
+    /* border: 1px solid black; */
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: fixed;
+}
+
+/* ISI NAVBAR */
+nav .nama {
+    /* border: 1px solid black; */
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    text-shadow: 0 0 5px wheat, 0 0 10px gold, 0 0 20px
+}
+
+nav .tombol {
+    position: relative;
+}
+
+
+/* TOMBOL ITEMS */
+nav .tombol .tombol-items a {
+    /* border: 1px solid black; */
+    position: relative;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+
+
+/* NAVBAR BEFORE AND AFTER */
+/* --------------------------------------------------------------------------------------------------------- */
+nav .tombol .tombol-items a::before {
+    content: '';
+    position: absolute;
+    background: red;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+
+nav .tombol .tombol-items a:hover:before {
+    width: 100%;
+}
+
+/* AKHIR NAVBAR */
+
+
+
+
+
+
+/* HOME */
+.home {
+    /* border: 2px solid; */
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    background-color: black;
+}
+
+.home .home-kiri {
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 1000px;
+    border-top-right-radius: 90%;
+    background-image: url(b-home.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+}
+
+
+.home-kanan-atas {
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 500px;
+    background-image: url(hand.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.home .home-kiri h1 {
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    padding-right: 60%;
+    text-shadow: 0 0 18px red, 0 0 35px red, 0 0 75px;
+}
+
+
+
+.home .home-kiri audio {
+    opacity: 0.1;
+    padding-left: 150px;
+}
+
+/* AKHIR HOME */
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROFILE */
+#profile {
+    /* border: 1px red; */
+    color: white;
+    padding-top: 75px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+
+.container-profile {
+    /* border: 5px solid red; */
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.text {
+    border: 1px red;
+    width: 40%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.774);
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+}
+
+
+
+.text p {
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.text h3 span {
+    color: red;
+}
+
+
+
+
+.image {
+    border: 1px red;
+    width: 40%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.774);
+    background-image: url(fotome.png);
+    background-size: cover;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+}
+
+/* AKHIR PROFILE */
+
+
+
+
+
+
+/* EXPERIENCE */
+#experience {
+    /* border: 1px red; */
+    color: white;
+    padding-top: 75px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+
+}
+
+
+
+.container-experience {
+    /* border: 1px solid red; */
+    /* border-top-left-radius: 90%; */
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(eye.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+/* ------------------------------------- */
+.container-experience .experience1 {
+    border: 1px solid;
+    width: 88%;
+    height: 220px;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+    display: flex;
+}
+
+
+.container-experience .experience2 {
+    border: 1px solid;
+    width: 88%;
+    height: 220px;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+    display: flex;
+
+}
+
+.container-experience .experience3 {
+    border: 1px solid;
+    width: 88%;
+    height: 220px;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+    display: flex;
+}
+
+/* -------------------------------------------- */
+.img1 {
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 80%;
+    margin: 20px;
+    background-image: url(pescoba.png);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    background-position: center;
+}
+
+.img2 {
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 80%;
+    margin: 20px;
+    background-image: url(freem.png);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    background-position: center;
+}
+
+.img3 {
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 80%;
+    margin: 20px;
+    background-image: url(jnd.jpg);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    background-position: center;
+}
+
+/* --------------------------------------------- */
+
+.experience1 .text-1 {
+    color: white;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+.experience2 .text-2 {
+    color: white;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+.experience3 .text-3 {
+    color: white;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/* EDUCATION */
+#education {
+    /* border: 1px red; */
+    color: white;
+    padding-top: 75px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+
+
+.container-education {
+    border: 1px solid;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(un.gif    );
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+/* ------------------------------------- */
+.container-education .education1 {
+    border: 1px solid;
+    width: 88%;
+    height: 220px;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+    display: flex;
+}
+
+
+.container-education .education2 {
+    border: 1px solid;
+    width: 88%;
+    height: 220px;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+    display: flex;
+
+}
+
+.container-education .education3 {
+    border: 1px solid;
+    width: 88%;
+    height: 220px;
+    box-shadow: 0 0 15px red, 0 0 25px gold, 0 0 50px;
+    display: flex;
+}
+
+/* ------------------------------------------------- */
+
+.imgsatu {
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 80%;
+    margin: 20px;
+    background-image: url(gen.jpg);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    background-position: center;
+}
+
+.imgdua {
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 80%;
+    margin: 20px;
+    background-image: url(hou.jpg);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    background-position: center;
+}
+
+.imgtiga {
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 80%;
+    margin: 20px;
+    background-image: url(suz.png);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    background-position: center;
+}
+
+/* ----------------------------------------------------------- */
+
+.education1 .text-satu {
+    color: white;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+.education2 .text-dua {
+    color: white;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+.education3 .text-tiga {
+    color: white;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+/* AKHIR EDUCATION */
+
+
+
+
+
+
+
+
+/* PORTOFILIO */
+#portofolio {
+    /* border: 1px red; */
+    color: white;
+    padding-top: 75px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+
+.container-portofolio1 {
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+
+
+
+.container-portofolio2 {
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 320px;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* p1 */
+.p1 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p1 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p1 .p1-g2:hover {
+    opacity: 0;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+.p2 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p2 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p2 .p2-g2:hover {
+    opacity: 0;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+
+.p3 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p3 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p3 .p3-g2:hover {
+    opacity: 0;
+}
+/* ---------------------------- */
+
+
+
+
+.p4 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p4 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p4 .p4-g2:hover {
+    opacity: 0;
+}
+/* ------------------------------- */
+
+
+.p5 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p5 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p5 .p5-g2:hover {
+    opacity: 0;
+}
+/* ---------------------------- */
+
+
+
+.p6 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p6 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p6 .p6-g2:hover {
+    opacity: 0;
+}
+/* ----------------- */
+
+
+
+.p7 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p7 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p7 .p7-g2:hover {
+    opacity: 0;
+}
+
+
+/* ----------------- */
+
+
+
+.p8 {
+    /* border: 5px solid red; */
+    position: relative;
+    width: 25%;
+    top: 0;
+    margin: 5px;
+}
+
+.p8 img {
+    /* border: 1px solid royalblue; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+}
+
+.p8 .p8-g2:hover {
+    opacity: 0;
+}
+
+
+/* AKHIR PORTOFOLIO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+
+
+footer .container-footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------------------- */
+
+footer .container-footer .about {
+    /* border: 1px solid orange; */
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+
+}
+
+
+
+footer .container-footer .about p {
+    /* border: 1px solid red; */
+    color: white;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+}
+
+
+footer .container-footer .about p span {
+    /* border: 1px solid red; */
+    color: red;
+    width: auto;
+    height: 100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* ---------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------- */
+footer .container-footer .kata-kata {
+    /* border: 1px solid orange; */
+    width: 30%;
+    height: 400px;
+    padding-top: 150px;
+}
+
+
+footer .container-footer .kata-kata p {
+    /* border: 1px solid red; */
+    color: white;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+    padding-left: 40px;
+}
+
+/* -------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------- */
+footer .container-footer .sosialmedia {
+    /* border: 1px solid orange; */
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+
+
+}
+
+footer .container-footer .sosialmedia a {
+    /* border: 1px solid red; */
+    color: white;
+    width: auto;
+    height: 50px;
+    font-size: x-large;
+}
+
+/* --------------------------------------------------------------- *
