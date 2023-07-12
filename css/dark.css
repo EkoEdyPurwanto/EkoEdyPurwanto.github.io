@@ -1,0 +1,38 @@
+.dark {
+  background-color: #0c0f15;
+}
+.dark .page-home .overlay {
+  background-color: rgba(14, 17, 24, 0.97);
+}
+.dark .page-title h2 {
+  color: #ffffff;
+}
+.dark .page-title .title-bg {
+  color: rgba(70, 88, 124, 0.06);
+}
+.dark .section-title h3::before {
+  background-color: #fff;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark .about-author .author-desc p {
+  color: #fff;
+}
+.dark .switcher-body h4 {
+  color: #0c0f15;
+}
+.dark .service-hex .st0 {
+  fill: transparent;
+}
+.dark .service-hex:hover .st0 {
+  fill: #fff;
+}
+.dark .testimonials .text,
+.dark .btn-border {
+  border-color: #1e2530;
+}
+/*# sourceMappingURL=dark.css.map */
